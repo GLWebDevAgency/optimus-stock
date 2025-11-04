@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { Navigation } from '@/components/Navigation';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="fr" className={inter.variable}>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
