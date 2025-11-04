@@ -6,6 +6,7 @@
 // Entities
 export * from './entities/product';
 export * from './entities/order';
+export * from './entities/supplier';
 
 // Value Objects
 export * from './value-objects/money';

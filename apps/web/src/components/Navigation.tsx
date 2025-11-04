@@ -12,6 +12,7 @@ const navItems = [
   { href: '/dashboard', label: 'Tableau de Bord', icon: '📊' },
   { href: '/inventory', label: 'Inventaire', icon: '📦' },
   { href: '/orders', label: 'Commandes', icon: '🛒' },
+  { href: '/suppliers', label: 'Fournisseurs', icon: '🤝' },
 ];
 
 export function Navigation(): JSX.Element {
