@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass-blur: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-sand-300;
+  }
+  
+  body {
+    @apply bg-sand-50 text-night-100 antialiased;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl font-medium;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-glass-light backdrop-blur-glass border border-gold-200/20 shadow-glass;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Support RTL pour l'arabe */
+[dir='rtl'] {
+  direction: rtl;
+}
+
+/* Focus visible pour accessibilité */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-oasis-200;
+}
