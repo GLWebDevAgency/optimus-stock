@@ -1,0 +1,25 @@
+{
+  "name": "optimus-stock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optimus Stock - ERP SaaS multitenant de gestion de stock et commandes fournisseurs",
+  "scripts": {
+    "dev:web": "pnpm --filter @optimus/web dev",
+    "dev:mobile": "pnpm --filter @optimus/mobile start",
+    "build:web": "pnpm --filter @optimus/web build",
+    "build:mobile": "pnpm --filter @optimus/mobile build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
+    "type-check": "pnpm -r type-check"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
